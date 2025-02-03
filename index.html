@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="sidebar" id="sidebar">
+        <h2>Journey Board <button class="toggle-btn" onclick="toggleSidebar()">◀</button></h2>
+        <ul>
+            <li>Technical Project Management</li>
+            <li>Threadbuild</li>
+            <li>Structure your Pointers</li>
+            <li>4SA Method</li>
+        </ul>
+    </div>
+    <button class="toggle-open" id="toggleOpen" onclick="toggleSidebar()">▶</button>
+    <div class="main-content" id="main-content">
+        <h4> DT THought</h4>
+        <h1>Project Management 
+            <span class='social-icons'>
+                <a href='#' class='icon'><i class='fab fa-facebook'></i></a>
+                <a href='#' class='icon'><i class='fab fa-github'></i></a>
+                <a href='#' class='icon'><i class='fab fa-instagram'></i></a>
+                <a href='mailto:example@example.com' class='icon'><i class='fas fa-envelope'></i></a>
+            </span>
+        </h1> 
+        <div class="content-grid">
+            <div class="card">
+                <h3>Technical Project Management</h3>
+                <!-- <iframe width="100%" height="200" src="" frameborder="0" allowfullscreen></iframe> -->
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/uIUvpJdYgSA?si=Va5fOLSAQYuR5ZM3" title="YouTube video player" frameborder="0" allowfullscreen="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="card">
+                <h3>Threadbuild</h3>
+                <p>Description: Watch the video and note key thread points.</p>
+                <textarea class="input-field" placeholder="Enter your thoughts"></textarea>
+                <button onclick="validateInput(this)">Submit</button>
+            </div>
+            <div class="card">
+                <h3>Structure Your Pointers</h3>
+                <p>Description: Write a 100-150 word article.</p>
+                <input type="text" placeholder="Title">
+                <textarea class="input-field" placeholder="Enter your thoughts"></textarea>
+                <button onclick="validateInput(this)">Submit</button>
+            </div>
+            <div class="card">
+                <h3>4SA Method</h3>
+                <p>Description: To explore more read more</p>
+                <p><strong>Introduction:</strong> The 4SA Method, how to bring an idea into process?</p>
+                <textarea class="input-field" placeholder="Enter your thoughts"></textarea>
+                <button onclick="validateInput(this)">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
